@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>TestNG:  API POST</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API POST</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 13 15:09:22 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7697 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/v1/ContactLists, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {"Name":"Srini6780"}</td>
+<td></td>
+<td>1</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/v1/ContactLists/BulkUpdate?FieldName=Email, PUT, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+  "ContactListId":   1723917,
+  "Action": "Add",
+  "PreserveRemovals": true,
+  "FieldValues": [
+   "mohan.kitusamy@tractiondigital.com","Ravikumar.Sriram@tractiondigital.com"]
+}</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/v1/SMSBlockLists/9876589023/Block, PUT, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/v1/SMSBlockLists/9876589023/Unblock, PUT, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/ContactImport/ContactImport_Import, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/ContactLists/ContactLists_UpsertContactList, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+  "Name": "SP_TEST_LIST",
+  "Description": "Sample list"
+}</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/Contacts/Contacts_ExportContacts, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+  "LastModifiedFilter": "2019-02-11T09:36:26.020Z",
+  "LastCreatedFilter": "2019-02-11T09:36:26.020Z",
+  "CreatedByFilter": 0,
+  "LastModifiedByFilter": 0,
+  "ContactModifySource": "Import|UserEdit|ApiEdit|FormSubmit|EmailUnsubscribe|SmsUnsubscribe|Resu</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/CustomInteraction/CustomInteraction_Add, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, [
+  {
+    "ContactIdentifierField": "string",
+    "ContactIdentifierValue": "string",
+    "Name": "string",
+    "TextData": "string",
+    "NumericData": 0,
+    "TimeStamp": "2019-02-11T09:36:26.025Z"
+  }
+]</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/CustomInteraction/CustomInteraction_ImportCustomInteraction, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/CustomInteractions/CustomInteractions_Add, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, [
+  {
+    "ContactIdentifierField": "string",
+    "ContactIdentifierValue": "string",
+    "Name": "string",
+    "TextData": "string",
+    "NumericData": 0,
+    "TimeStamp": "2019-02-11T09:36:26.025Z"
+  }
+]</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailBlockLists/EmailBlockLists_BlockIfNotBlocked, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailBlockLists/EmailBlockLists_UnblockEmail, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaign, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaignContent, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+"TextContent": "Test text content",
+"HtmlContent": "Test Email content"
+}</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaignGoogleAnalytic, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaignLitmusAnalytic, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaignCriteria, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+  "Lists": [
+    0
+  ],
+  "Segments": [
+    0
+  ],
+  "Filter": [
+    {
+      "Field": "string",
+      "Operator": "Equal|NotEqual|MatchesAnyOf|MatchesNoneOf|GreaterThan|GreaterThanEquals|LessThan|LessThanEquals|Between|Contains|NotContains|ContainsAnyOf</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaignLaunch, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_GetEmailCampaignCancel, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailCampaigns/EmailCampaigns_EmailCampaignTest, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+"CampaignId": 123,
+"Recipients": "a@b.com"
+}</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailTemplates/EmailTemplates_EmailTemplate, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+    "ReplyTo": "",
+    "Name": "SP API test template",
+    "Description": "SP API test template",
+    "ToAddress": "siva.envision@gmail.com",
+    "Cc": "",
+    "Bcc": "",
+    "SubDomainId": 0,
+    "CampaignSchedule": {
+        "ABSendRule": "None",
+    </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/EmailTemplates/EmailTemplates_UseTemplate, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/Form/Form_ProcessFormSubmit, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/Forms/Forms_ProcessFormSubmit, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+    "submittedData": {
+        "Email": "a@gmail.com",
+        "First Name": "Fn",
+        "Last Name": "Ln",
+        "DOB_SP": "31/12/1989",
+        "Boolean Check": "true",
+        "TermsNCond1": "true",
+        "list-15034": "true",
+        "test": "</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/SMSBlockLists/SMSBlockLists_BlockIfNotBlocked, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/SMSBlockLists/SMSBlockLists_UnblockSMS, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, </td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/Trigger/Trigger_TrigerSendEmail, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+  "ContactFieldName": "Email",
+  "ContactFieldValue": "a.b@tractiondigital.com",
+  "OverrideToAddress": "a.b@gmail.com"
+}</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+<tr>
+<td title='APISource.API_Testing.aptTesting_POSTRequest()'><b>aptTesting_POSTRequest</b><br>Test class: APISource.API_Testing<br>Parameters: Y, https://api-ecm9.sngsend.com:443/help/index#!/Triggers/Triggers_SendEmail, POST, traction 8DADA7C4BB7BFAAAF06E832E44A600B5D4879BF4E0E1E47CDC7759887CADBB26, {
+  "ContactFieldName": "Email",
+  "ContactFieldValue": "a.b@tractiondigital.com",
+  "OverrideToAddress": "a.b@gmail.com"
+}</td>
+<td></td>
+<td>0</td>
+<td>APISource.API_Testing@4e7dc304</td></tr>
+</table><p>
+</body>
+</html>
